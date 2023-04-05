@@ -22,13 +22,17 @@ while number_of_attemps < 7:
     number_of_attemps += 1
 
     if random_number==user_number:
-        print("you win")
+        #print(f"you did {number_of_attemps} tries")
         break
     
     elif random_number < user_number:
         print("the number is less")
     elif random_number > user_number:
         print("the number is greater")
+if random_number==user_number:
+        print(f"you did {number_of_attemps} tries")
+if random_number != user_number:
+    print("you lost")     
 
 
 
